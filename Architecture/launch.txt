@@ -1,0 +1,18 @@
+1. OPen Terminal
+
+cd genai-doc-assistant
+python -m venv venv
+source venv/bin/activate  # or .\venv\Scripts\activate on Windows
+pip install -r requirements.txt
+
+
+2.create .env in root
+OPENAI_API_KEY=your_openai_key_here
+
+
+3. Run the app
+streamlit run frontend/streamlit_app.py
+
+
+
+set GOOGLE_API_KEY=""

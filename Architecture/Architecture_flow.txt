@@ -1,0 +1,20 @@
+[ User Uploads File via Streamlit UI ]
+                │
+                ▼
+[document_loader.py]
+→ Extracts raw text from PDF/TXT
+                │
+                ▼
+[summarizer.py]
+→ Sends prompt to GPT-4 to generate 150-word summary
+                │
+                ▼
+[qa_engine.py]
+→ Embeds chunks using LangChain + FAISS
+→ Provides two interaction paths:
+     ├─ Ask Anything: User asks → GPT-4 responds with context
+     └─ Challenge Me: GPT-4 generates Qs, user answers, GPT-4 evaluates
+                │
+                ▼
+[streamlit_app.py]
+→ Renders all outputs: summary, answers, feedback, and source snippets

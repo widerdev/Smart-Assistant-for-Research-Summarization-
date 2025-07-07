@@ -1,0 +1,22 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+genai_assistant/
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# VS Code settings
+.vscode/
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints
+
+# Streamlit's gener
